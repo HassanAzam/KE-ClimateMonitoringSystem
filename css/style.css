@@ -1,0 +1,354 @@
+/**/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+background-image:url(../assets/climatebg.jpg);
+	
+}
+
+#wrapper
+{
+	width:960px;
+	margin:0 auto;
+	
+	overflow:auto;
+	padding:10px;
+	
+	background-color:#ededed;
+}
+
+header{
+	height:100px;
+	
+	margin:0 0 10px 0;
+background-color:#333;
+}
+
+.box
+{
+	width:47.842%;
+	
+	/*height:200px;*/
+	margin:0 0 10px 0;
+	padding:5px;
+	background-color:#fff;
+	border-bottom:1px solid #333;
+}
+
+.f{
+	float:top;
+}
+
+.clear{
+	clear:left;
+}
+
+.l{
+	float:left;
+}
+
+
+.r{
+	float:right;
+}
+
+#cp{
+	
+	height:1000px;
+	margin-left:0.4%;
+	padding:10px;
+	width:82%;
+
+	background-color:#ededed;
+}
+
+ul.list{
+	
+	margin:10px 0 0 0;
+	color:#fff;
+}
+
+p{
+	margin:0 0 10px 0;
+	font-size:15px;
+	color:#eded;
+	font-family:sans-serif;
+}
+
+.orange
+{
+	background-color:#f69513;
+}
+
+.blue{
+	background-color:#1593d4;
+}
+
+.green{
+	background-color:#a3d637;
+}
+
+.list li{
+	padding:15px 7px 15px 7px;
+	text-align:center;
+	
+}
+
+.list a{
+	color:white;
+	text-decoration:none;
+	
+}
+
+.list li:hover{
+	
+	background-color:black;
+	
+}
+
+
+
+#list{
+overflow:auto;
+
+	
+	width:15%;
+	background-color:#fff;
+}
+
+.h1{
+	background-color:#333;
+	color:white;
+	padding:10px;
+	text-align:center;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+
+.graph
+{
+	width:780px;
+	height:250px;
+	
+}
+
+#graphbuttons button{
+  background: #333;
+	background: -moz-linear-gradient(top,#444 0%,#188BC0 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#444),color-stop(100%,#188BC0));
+	background: -webkit-linear-gradient(top,#444 0%,#188BC0 100%);
+	background: -o-linear-gradient(top,#444 0%,#188BC0 100%);
+	background: -ms-linear-gradient(top,#444 0%,#188BC0 100%);
+	background: linear-gradient(top,#444 0%,#188BC0 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#444',endColorstr='#188BC0',GradientType=0);
+	padding:8px 13px;
+	color:#fff;
+	font-family:'Helvetica Neue',sans-serif;
+	font-size:17px;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border:1px solid #1A87B9;
+	cursor: pointer;
+}
+
+#graphbuttons
+{
+	width:370px;
+	margin:10px auto;
+}
+
+/* Accordion styling */
+
+/* Style the buttons that are used to open and close the accordion panel */
+div.accordion {
+    background-color:#333;
+	color:white;
+	padding:10px;
+	text-align:center;
+	font-weight:bold;
+	margin-bottom:10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+div.accordion.active, {
+    background-color: #ddd;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0;
+    background-color: white;
+    display: none;
+}
+
+/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
+div.panel.show {
+    display: block !important;
+}
+
+div.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #fff;
+    float: right;
+    margin-left: 5px;
+}
+
+div.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+div.panel {
+    padding: 10px 18px 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0; 
+	border:1px solid #ccc;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
+
+/* Accordion styling ends */
+
+#devices li{
+	
+	font-size:15px;
+	text-align:left !important;
+	margin-bottom:10px;
+}
+
+/* Table styling */
+
+table {
+	background: #f5f5f5;
+	border-collapse: separate;
+	box-shadow: inset 0 1px 0 #fff;
+	font-size: 12px;
+	line-height: 24px;
+	margin: 30px auto;
+	text-align: left;
+	width: 200px;
+}	
+
+th {
+	background: url(http://jackrugile.com/images/misc/noise-diagonal.png), linear-gradient(#777, #444);
+	border-left: 1px solid #555;
+	border-right: 1px solid #777;
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #333;
+	box-shadow: inset 0 1px 0 #999;
+	color: #fff;
+  font-weight: bold;
+	padding: 10px 15px;
+	position: relative;
+	text-shadow: 0 1px 0 #000;	
+}
+
+th:after {
+	background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+	content: '';
+	display: block;
+	height: 25%;
+	left: 0;
+	margin: 1px 0 0 0;
+	position: absolute;
+	top: 25%;
+	width: 100%;
+}
+
+th:first-child {
+	border-left: 1px solid #777;	
+	box-shadow: inset 1px 1px 0 #999;
+}
+
+th:last-child {
+	box-shadow: inset -1px 1px 0 #999;
+}
+
+td {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #e8e8e8;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 10px 15px;
+	position: relative;
+	transition: all 300ms;
+}
+
+td:first-child {
+	box-shadow: inset 1px 0 0 #fff;
+}	
+
+td:last-child {
+	border-right: 1px solid #e8e8e8;
+	box-shadow: inset -1px 0 0 #fff;
+	
+}	
+
+h1.info
+{
+	font-size:18px;
+	color:#fff;
+	font-family:sans-serif;
+	padding:8px;
+}
+
+/*Table styling ends */
